@@ -27,7 +27,7 @@ namespace wcflogreg.Queries
                 if (dr.HasRows)
                 {
                     dr.Read();
-                    result=dr.GetInt32("id")+" "+dr.GetInt32("rank");
+                    result="A felhasználó id: "+dr.GetInt32("id")+" a rank pedig "+dr.GetInt32("rank")+".";
                 }
                 
 
@@ -36,7 +36,7 @@ namespace wcflogreg.Queries
             catch (Exception)
             {
 
-                return "Hiba az azonosítás során!";
+                return "Hiba az adatbázis művelet során!";
             }
         }
 

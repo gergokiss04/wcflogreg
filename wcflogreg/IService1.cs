@@ -33,6 +33,7 @@ namespace wcflogreg
 
         string registration(user user);
 
+        /*
         [OperationContract]
 
         [WebInvoke(Method = "*",
@@ -43,7 +44,7 @@ namespace wcflogreg
 
         string rankCheck (user user);
 
-
+        */
 
     }
 }
